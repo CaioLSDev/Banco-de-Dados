@@ -1,0 +1,11 @@
+CREATE LOGIN user01
+WITH PASSWORD = '123'
+
+
+CREATE USER user01 FOR LOGIN user01;
+GRANT SELECT TO user01;
+/* Teste
+
+INSERT INTO Usuarios VALUES ('user02', '1234');
+
+*/
